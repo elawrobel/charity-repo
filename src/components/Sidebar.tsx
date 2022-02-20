@@ -4,8 +4,6 @@ import styled from 'styled-components'
 
 import * as FaIcons from 'react-icons/fa' 
 
-import { SidebarData } from './SidebarData';
-
 const Navbar = styled.div`
     display: flex;
     justify-content: start;
@@ -68,6 +66,18 @@ const MenuItemLinks = styled(Link)`
         margin: 0 2rem;
     }
 `
+const SidebarData = [
+    {
+        title: 'Home',
+        path: '/',
+        icon: <FaIcons.FaHome />
+    },
+    {
+        title: 'LogIn',
+        path: '/login',
+        icon: <FaIcons.FaWpforms />
+    },
+]
 
 const Sidebar: React.FunctionComponent = () => {
     const [close, setClose] = useState(false)

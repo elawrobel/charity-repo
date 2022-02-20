@@ -1,17 +1,12 @@
+import { Container } from '@material-ui/core';
 import React from 'react'
-import styled from 'styled-components'
-
-const HomeText = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 50px;
-    height: 70vh;
-`
+import Form from '../components/Form';
 
 const Home: React.FunctionComponent = () => {
     return (
-        <HomeText>Login page</HomeText>
+        <Container fixed>
+            <Form />
+        </Container>
     )
 }
 
